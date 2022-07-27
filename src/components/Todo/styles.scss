@@ -1,0 +1,48 @@
+.todo{
+  width:400px;
+  height: fit-content;
+  padding:20px;
+  background:lightskyblue;
+  margin: 0 auto;
+  margin-top:150px;
+  &__add{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid red;
+    padding-bottom:20px;
+    input{
+      background:lemonchiffon;
+      border:none;
+      padding: 10px;
+      border-radius: 7px;
+      outline: none;
+    }
+    button{
+      font-weight: 700;
+      color:darkmagenta;
+      background: goldenrod;
+      border: none;
+      padding:10px;
+      border-radius: 7px;
+    }
+  }
+  &__item{
+    background: thistle;
+    width: 100%;
+    padding:20px 0;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    border-radius: 16px;
+    border: none;
+    padding-left:15px;
+    &-text{
+      font-weight: 700;
+      font-size: 22px;
+      font-style: italic;
+      &.done{
+       text-decoration: line-through; 
+      }
+    }
+  }
+
+}
